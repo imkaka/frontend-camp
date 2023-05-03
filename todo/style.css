@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: -0.045em;
+  color: #333333;
+}
+
+.tabs {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+  border-radius: 5px 5px 0 0;
+}
+
+.tabs button {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 17px;
+  background-color: #fff;
+  color: #333333;
+  border: none;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  border-bottom: 4px solid #2F80ED;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.input-container > #taskInput {
+  flex-grow: 1;
+  width: 80%;
+  padding: 10px;
+  font-size: 14px;
+  font-style: normal;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+
+/* input[type="text"] {
+} */
+
+.input-container > button {
+  width: 110px;
+  border: none;
+  color:#FFFFFF;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  background: #2F80ED;
+  box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.input-container > button:hover {
+  scale: 1.1;
+}
+
+.tasks {
+  justify-content: center;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#taskList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#taskList li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#taskList li input[type="checkbox"] {
+  margin-right: 18px;
+  scale: 2;
+  color:rgba(127, 177, 243, 0.4);
+}
+
+#taskList li span {
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+#taskList li button {
+  padding: 10px;
+  font-size: 18px;
+  background: #BDBDBD;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#taskList li button i {
+  padding: 0;
+  margin: 0;
+}

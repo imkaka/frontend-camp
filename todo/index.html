@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>#todo</h1>
+		<div class="tabs">
+			<button id="allBtn" class="active">All</button>
+			<button id="activeBtn">Active</button>
+			<button id="completedBtn">Completed</button>
+		</div>
+		<div class="input-container">
+			<input type="text" id="taskInput" placeholder="add details">
+			<button id="addBtn">Add</button>
+		</div>
+		<div class="tasks">
+			<ul id="taskList">
+				<!-- tasks will be added dynamically using JavaScript -->
+			</ul>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
