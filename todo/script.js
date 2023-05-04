@@ -76,6 +76,9 @@ function render(filteredTasks = tasks) {
 
 		const taskContent = document.createElement('span');
 		taskContent.innerText = task.content;
+		if (task.completed) {
+			taskContent.style = "text-decoration: line-through";
+		}
 
 		const deleteButton = document.createElement('button');
 		const deleteIcon = document.createElement('i');
